@@ -1,13 +1,16 @@
 # BioLab team content checklist
 
-All current resource pages are incomplete examples. No real scientific procedure, safety rule, equipment specification, student identity, validation evidence or course policy has been supplied.
+Equipment and Materials now contain supplied confirmed purchase records and a separately labelled reported chemical inventory. No operating procedure, safety rule, validation evidence or course policy has been supplied. See admin/INVENTORY.md and admin/inventory-to-verify.md for inventory maintenance.
 
 - [ ] Supply the public maintainer/contact information in Start Here.
 - [ ] Confirm the public-content review process and who may approve changes.
 - [ ] Define protocol validation / experimental / archival criteria, responsible reviewers and supporting records. Review status text and warnings together.
 - [ ] Complete protocol IDs, titles, versions, last-tested dates, responsible people and estimated times.
 - [ ] Supply and review each protocol's objective, materials, preparation, procedure, parameters, expected result, failure signs, cleaning/waste, required documentation and equipment/method links.
-- [ ] Replace the equipment example with confirmed names, locations, responsible people, access/training requirements and status.
+- [x] Add the seven confirmed equipment records and responsible person from the supplied inventory.
+- [ ] Confirm current equipment access/readiness and supply usage documentation; do not infer these from purchases.
+- [ ] Physically confirm the reported chemical inventory and complete the administrator to-verify checklist.
+- [ ] Supply missing consumable references, stock counts and reviewed documentation links without publishing prices or chemical storage locations.
 - [ ] Supply and review equipment purpose, before/operation/after instructions, common problems, safety sources and protocol links.
 - [ ] Review all nine method prompts: sample naming; controls; variables/constants; repetitions; density measurement; standardised photography; observation/interpretation; failures; data organisation.
 - [ ] For each method supply scope, inputs, reviewed procedure, records/units, analysis, limitations, evidence and applicable examples; do not treat the prompts as standards.

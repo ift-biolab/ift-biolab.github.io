@@ -1,7 +1,7 @@
 ---
 title: "Courses"
 description: "Organise course material, workshops, assignments and evaluation criteria."
-weight: 50
+weight: 60
 ---
 
 Placeholder section. The BioLab team must complete and review the content.

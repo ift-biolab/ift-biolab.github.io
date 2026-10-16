@@ -8,7 +8,7 @@ linkTitle: "Home"
 Protocols, equipment, methods and experimental projects
 {.lead}
 
-Use this site to find documentation and follow links to project and student records. Content marked **Placeholder** is a structure to complete, not laboratory guidance.
+Use this site to find equipment and materials records, documentation, and links to project and student records. Inventory labels distinguish confirmed purchase records from reported items awaiting verification. Content marked **Placeholder** is a structure to complete, not laboratory guidance.
 
 > [!WARNING] Check protocol status
 > **Validated**, **Experimental** and **Archived** are different statuses. An Experimental protocol has not been validated; Archived pages are retained for reference. The current example is incomplete and must not be used as a procedure. Validation criteria and approval responsibilities still need to be supplied by the BioLab team.

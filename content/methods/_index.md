@@ -1,7 +1,7 @@
 ---
 title: "Methods"
 description: "Document experimental reasoning, measurements and records with structured prompts."
-weight: 40
+weight: 50
 ---
 
 Placeholder section. The BioLab team must complete and review the content.

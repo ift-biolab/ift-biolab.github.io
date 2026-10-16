@@ -1,7 +1,7 @@
 ---
 title: "Students"
 description: "Follow manually maintained links to student documentation sites."
-weight: 70
+weight: 80
 ---
 
 This index is maintained directly in this Markdown file. No student content is imported. Add only information approved for public publication; no real student information has been supplied yet.

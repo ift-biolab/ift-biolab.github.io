@@ -4,7 +4,7 @@ Protocols, equipment, methods and experimental projects.
 
 **Maintainers normally edit only `content/`.** Markdown and page-local images are committed to Git, built with Hugo and published by GitHub Actions to GitHub Pages. No Hugo knowledge or local installation is needed to edit content on github.com. See [Start Here](content/start-here/_index.md) for the editing steps and [ADMIN.md](ADMIN.md) for publication and recovery.
 
-**This repository and its future site are public.** Do not commit passwords, personal data, confidential partner information, unpublished proprietary protocols or restricted research data. All example records are explicitly incomplete placeholders, not usable procedures or verified standards.
+**This repository and its future site are public.** Do not commit passwords, personal data, confidential partner information, unpublished proprietary protocols or restricted research data. Equipment and Materials contain supplied inventory records with explicit status labels. Other example records remain incomplete placeholders, not usable procedures or verified standards.
 
 ## Content map
 
@@ -13,7 +13,9 @@ Protocols, equipment, methods and experimental projects.
 | `content/_index.md` | Homepage introduction and access to every section |
 | `content/start-here/_index.md` | Reader and editor guide |
 | `content/protocols/` | Protocol records with visible status |
-| `content/equipment/` | Equipment records |
+| `content/equipment/` | Confirmed equipment purchase records |
+| `content/materials/` | Confirmed materials/consumables and separately labelled reported chemicals |
+| `admin/` | Inventory maintenance notes and non-public-facing to-verify checklist (repository remains public) |
 | `content/methods/` | Nine method prompts to complete and review |
 | `content/courses/` | Course structure and teaching resources |
 | `content/projects/` | Manual index and project overviews |

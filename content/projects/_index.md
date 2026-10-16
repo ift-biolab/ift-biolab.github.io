@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 description: "Browse short project overviews and links to separate documentation."
-weight: 60
+weight: 70
 ---
 
 This is a manually maintained index. Project overviews link to student sites and repositories; student content is not copied or imported.

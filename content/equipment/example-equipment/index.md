@@ -2,6 +2,9 @@
 title: "Example equipment — placeholder"
 description: "An incomplete equipment record with no specifications or operating instructions."
 weight: 10
+hidden: true
+build:
+  list: never
 ---
 
 > [!WARNING] Incomplete equipment record
