@@ -1,0 +1,32 @@
+baseURL = 'https://ift-biolab.github.io/'
+title = 'IFT BioLab'
+locale = 'en'
+defaultContentLanguage = 'en'
+enableRobotsTXT = true
+
+[module]
+  [module.hugoVersion]
+    min = '0.168.0'
+  [[module.imports]]
+    path = 'github.com/McShelby/hugo-theme-relearn'
+
+[params]
+  themeVariant = 'zen-light'
+  # Native Relearn styling extension: assets/css/custom.css (see ADMIN.md).
+  editURL = 'https://github.com/ift-biolab/ift-biolab.github.io/edit/main/content/${FilePath}'
+  sidebarHeaderMenus = [{ type = 'menu', identifier = 'home', disableTitle = true }, { type = 'divider' }]
+  [params.image]
+    errorlevel = 'error'
+  [params.link]
+    errorlevel = 'error'
+
+[markup.goldmark.parser.attribute]
+  block = true
+
+[[menus.home]]
+  name = 'Home'
+  title = 'Home'
+  pageRef = '/'
+
+[markup.highlight]
+  style = 'github'
