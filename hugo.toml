@@ -17,7 +17,8 @@ enableRobotsTXT = true
   sidebarHeaderMenus = [{ type = 'menu', identifier = 'home', disableTitle = true }, { type = 'divider' }]
   # Native Relearn logo + separate HTML site title. See BRANDING.md.
   [params.logo]
-    src = '/images/shared/ift-biolab-mark.svg'
+    src = '/images/shared/ift-biolab-logo-horizontal.png'
+    compactSrc = '/images/shared/ift-biolab-mark.png'
     layout = 'sidebar-row'
   [params.image]
     errorlevel = 'error'

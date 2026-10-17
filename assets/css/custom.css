@@ -26,7 +26,8 @@
   --biolab-muted: color-mix(in srgb, var(--ift-charcoal) 78%, var(--ift-off-white));
   --biolab-surface: color-mix(in srgb, var(--ift-sage) 30%, var(--ift-off-white));
   --biolab-border: color-mix(in srgb, var(--ift-charcoal) 22%, var(--ift-off-white));
-  --ift-logo-width: 3.5rem;
+  --ift-logo-width: 14rem;
+  --ift-home-logo-width: 40rem;
   --ift-home-mark-width: clamp(5rem, 12vw, 8rem);
   --LOGO-IMAGE-width: var(--ift-logo-width);
   --LOGO-TEXT-color: var(--ift-charcoal);
@@ -117,18 +118,16 @@ code, pre, kbd, samp { font-family: var(--ift-font-mono); }
 #R-sidebar .active > a { border-radius: 0; box-shadow: none; }
 #R-sidebar li.active > a { border-inline-start: 3px solid var(--ift-algae); }
 #R-logo { gap: .65rem; text-align: left; }
-#R-logo.R-default .logo-image { display: block; flex-shrink: 0; }
-#R-logo.R-default .logo-title { font-size: 1.35rem; font-weight: 600; line-height: 1.15; white-space: normal; }
-/* Home-only identity: existing semantic H1 remains the HTML wordmark.
-   The decorative SVG resolves relative to this stylesheet under Pages subpaths. */
-#R-body:has(.ift-home) h1 { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2rem); font-size: clamp(2.35rem, 5vw, 4.4rem); margin-block: .5rem 1.7rem; }
-#R-body:has(.ift-home) h1::before {
-  content: "";
-  flex: 0 0 var(--ift-home-mark-width);
-  width: var(--ift-home-mark-width);
-  aspect-ratio: 184 / 176;
-  background: url("../images/shared/ift-biolab-mark.svg") center / contain no-repeat;
-}
+#R-logo.R-default .logo-image { display: block; flex-shrink: 1; max-width: 100%; }
+#R-logo.R-default .logo-image img { width: 100%; max-width: 100%; height: auto; }
+#R-logo.R-default .logo-title { display: none; font-size: 1.35rem; font-weight: 600; line-height: 1.15; white-space: normal; }
+/* Final PNG assets: responsive source selection, natural aspect ratios, no filters,
+   clipping, recoloring, object-fit crop or image processing. */
+#R-body .ift-home-identity { display: flex; align-items: center; gap: 1rem; margin-block: .5rem 1.7rem; }
+#R-body .ift-home-identity picture { display: block; width: var(--ift-home-logo-width); max-width: 100%; }
+#R-body .ift-home-identity img { display: block; width: 100%; height: auto; }
+/* Keep the semantic H1 accessible while the supplied desktop image carries its wordmark. */
+#R-body .ift-home-identity .ift-identity-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 #R-topbar { font-size: .85rem; }
 #R-body .kicker, #R-body .record-label, #R-body .notebook-label {
   color: var(--biolab-accent);
@@ -168,6 +167,11 @@ code, pre, kbd, samp { font-family: var(--ift-font-mono); }
 /* Native automatic section listings: quiet editorial rows, no extra components. */
 #R-body .children h2 { margin-bottom: .5rem; }
 @media (max-width: 47.999rem) {
+  #R-logo.R-default .logo-image { width: 3.5rem; flex: 0 0 3.5rem; }
+  #R-logo.R-default .logo-title { display: block; }
+  #R-body .ift-home-identity picture { width: var(--ift-home-mark-width); flex: 0 0 var(--ift-home-mark-width); }
+  #R-body .ift-home-identity .ift-identity-text { position: static; width: auto; height: auto; overflow: visible; clip-path: none; white-space: normal; }
+  #R-body h1.ift-home-identity { font-size: clamp(2rem, 8.5vw, 2.35rem); }
   #R-body-inner { padding: 1.8rem 1.25rem 3rem; }
   #R-body h1 { font-size: clamp(1.8rem, 7.5vw, 2.15rem); }
   #R-body dl { grid-template-columns: 1fr; gap: .2rem; }

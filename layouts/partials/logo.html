@@ -1,5 +1,8 @@
-{{/* The native image helper requires an assets/ resource; our approved mark lives in static/. */}}
-<a id="R-logo" class="R-default layout-sidebar-row" href="{{ partial "permalink.gotmpl" (dict "to" site.Home) }}">
-  <span class="logo-image"><img src="{{ strings.TrimPrefix "/" site.Params.logo.src | relURL }}" width="56" height="54" alt=""></span>
+{{/* Final supplied PNGs are served unchanged; the picture element selects an asset, not a crop. */}}
+<a id="R-logo" class="R-default layout-sidebar-row" aria-label="{{ site.Title }}" href="{{ partial "permalink.gotmpl" (dict "to" site.Home) }}">
+  <picture class="logo-image">
+    <source media="(min-width: 48rem)" srcset="{{ strings.TrimPrefix "/" site.Params.logo.src | relURL }}" width="1405" height="350">
+    <img src="{{ strings.TrimPrefix "/" site.Params.logo.compactSrc | relURL }}" width="419" height="350" alt="">
+  </picture>
   <span class="logo-title">{{ site.Title }}</span>
 </a>

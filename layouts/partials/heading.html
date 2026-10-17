@@ -1,0 +1,12 @@
+{{- $title := partial "title.gotmpl" (dict "page" .) -}}
+{{- if .IsHome -}}
+<h1 id="{{ $title | plainify | anchorize }}" class="ift-home-identity">
+  <picture>
+    <source media="(min-width: 48rem)" srcset="{{ strings.TrimPrefix "/" site.Params.logo.src | relURL }}" width="1405" height="350">
+    <img src="{{ strings.TrimPrefix "/" site.Params.logo.compactSrc | relURL }}" width="419" height="350" alt="">
+  </picture>
+  <span class="ift-identity-text">{{ $title }}</span>
+</h1>
+{{- else -}}
+<h1 id="{{ $title | plainify | anchorize }}">{{ $title }}</h1>
+{{- end -}}
