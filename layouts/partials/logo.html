@@ -1,0 +1,5 @@
+{{/* The native image helper requires an assets/ resource; our approved mark lives in static/. */}}
+<a id="R-logo" class="R-default layout-sidebar-row" href="{{ partial "permalink.gotmpl" (dict "to" site.Home) }}">
+  <span class="logo-image"><img src="{{ strings.TrimPrefix "/" site.Params.logo.src | relURL }}" width="56" height="54" alt=""></span>
+  <span class="logo-title">{{ site.Title }}</span>
+</a>

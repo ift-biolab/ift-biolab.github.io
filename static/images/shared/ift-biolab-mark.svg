@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184 176" fill="none">
+  <title>Branching mark</title>
+  <g stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+    <path d="M24 96C78 96 90 88 102 60S126 22 150 24" stroke="#6B7F63"/>
+    <path d="M24 96C82 96 107 63 160 70" stroke="#1F2A26"/>
+    <path d="M24 96C84 96 107 114 156 118" stroke="#6B7F63"/>
+    <path d="M24 96C60 96 81 97 96 112S118 148 136 150" stroke="#1F2A26"/>
+  </g>
+  <circle cx="24" cy="96" r="15" fill="#1F2A26"/>
+  <circle cx="150" cy="24" r="13" fill="#D8933A" stroke="#1F2A26" stroke-width="2"/>
+  <circle cx="160" cy="70" r="14" fill="#C9D4B8" stroke="#6B7F63" stroke-width="2"/>
+  <circle cx="156" cy="118" r="13" fill="#6B7F63"/>
+  <circle cx="136" cy="150" r="14" fill="#1F2A26"/>
+</svg>

@@ -6,7 +6,7 @@ linkTitle: "Home"
 ---
 
 Protocols, equipment, methods and experimental projects
-{.lead}
+{.lead .ift-home}
 
 Use this site to find equipment and materials records, documentation, and links to project and student records. Inventory labels distinguish confirmed purchase records from reported items awaiting verification. Content marked **Placeholder** is a structure to complete, not laboratory guidance.
 

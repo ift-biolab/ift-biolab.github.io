@@ -1,5 +1,9 @@
 # Main-site administrator runbook
 
+## Visual identity
+
+See [BRANDING.md](BRANDING.md) for the IFT BioLab palette, editable SVG assets, typography, contrast choices and the small local Relearn customization. Identity changes require local visual review before publication.
+
 The site is maintained by administrators or designated maintainers in the existing **ift-biolab** organization. Keep student write access limited to their own repositories; do not grant main-site access by default. The main site and its public content are separate from student sites. No custom secrets, backend or content aggregation are used.
 
 ## Content maintenance

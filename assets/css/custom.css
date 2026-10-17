@@ -1,4 +1,4 @@
-/* IFT BioLab student documentation. Native Relearn custom.css extension.
+/* IFT BioLab identity. Native Relearn custom.css extension.
    Administrators: change these tokens; students only edit content/.
    Remove this file to restore the standard theme presentation. */
 /* Original upstream WOFF2, SIL OFL 1.1; provenance/license in static/fonts/space-grotesk/.
@@ -12,12 +12,25 @@
   font-display: swap;
 }
 :root#R-html {
-  --biolab-accent: #32665f;
-  --biolab-background: #fbfaf7;
-  --biolab-text: #252b28;
-  --biolab-muted: #5b655f;
-  --biolab-surface: #f0f1eb;
-  --biolab-border: #d8ddd5;
+  /* Approved identity palette. See BRANDING.md for contrast and asset usage. */
+  --ift-charcoal: #1F2A26;
+  --ift-off-white: #F6F4EC;
+  --ift-algae: #6B7F63;
+  --ift-sage: #C9D4B8;
+  --ift-amber: #D8933A;
+  /* Compatibility aliases keep the existing editorial system transferable.
+     Algae is decorative; normal-size text/links use charcoal for contrast. */
+  --biolab-accent: var(--ift-charcoal);
+  --biolab-background: var(--ift-off-white);
+  --biolab-text: var(--ift-charcoal);
+  --biolab-muted: color-mix(in srgb, var(--ift-charcoal) 78%, var(--ift-off-white));
+  --biolab-surface: color-mix(in srgb, var(--ift-sage) 30%, var(--ift-off-white));
+  --biolab-border: color-mix(in srgb, var(--ift-charcoal) 22%, var(--ift-off-white));
+  --ift-logo-width: 3.5rem;
+  --ift-home-mark-width: clamp(5rem, 12vw, 8rem);
+  --LOGO-IMAGE-width: var(--ift-logo-width);
+  --LOGO-TEXT-color: var(--ift-charcoal);
+  --LOGO-TEXT-HOVER-color: var(--ift-charcoal);
   /* Body/mono alias the theme's resolved fonts, not the other way around:
      do not map --MAIN-font back to --ift-font-body (that creates a cycle). */
   --ift-font-body: var(--INTERNAL-MAIN-font, "Roboto Flex", Helvetica, Arial, sans-serif);
@@ -45,6 +58,13 @@
   --MENU-SECTIONS-LINK-HOVER-color: var(--biolab-accent);
   --MENU-SECTION-ACTIVE-CATEGORY-color: var(--biolab-accent);
   --MENU-SECTION-ACTIVE-CATEGORY-BG-color: var(--biolab-background);
+  --MENU-SECTIONS-ACTIVE-BG-color: var(--biolab-surface);
+  --MENU-HOME-LINK-color: var(--ift-charcoal);
+  --MENU-HOME-LINK-HOVER-color: var(--ift-charcoal);
+  --MENU-HOME-TOP-SEPARATOR-color: var(--biolab-border);
+  --MENU-HOME-BOTTOM-SEPARATOR-color: var(--biolab-border);
+  --MENU-HOME-SEPARATOR-color: var(--biolab-border);
+  --MENU-SECTION-SEPARATOR-color: var(--biolab-border);
   --MENU-SEARCH-color: var(--biolab-accent);
   --MENU-SEARCH-BG-color: var(--biolab-background);
   --MENU-BORDER-color: var(--biolab-border);
@@ -68,7 +88,7 @@ code, pre, kbd, samp { font-family: var(--ift-font-mono); }
 #R-body .flex-block-wrapper { max-width: var(--biolab-page-width); }
 #R-body h1 {
   font-size: clamp(2.2rem, 4vw, 3.4rem);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.14;
   letter-spacing: -.02em;
   text-align: left;
@@ -76,13 +96,15 @@ code, pre, kbd, samp { font-family: var(--ift-font-mono); }
   margin: 0 0 1.7rem;
   overflow: visible;
 }
-#R-body h2 { font-size: 1.4rem; font-weight: 600; line-height: 1.35; letter-spacing: -.01em; margin-top: 2.6rem; }
+#R-body h2 { font-size: clamp(1.4rem, 2.1vw, 1.7rem); font-weight: 600; line-height: 1.35; letter-spacing: -.01em; margin-top: 2.6rem; }
 #R-body h3 { font-size: 1.1rem; font-weight: 600; line-height: 1.4; letter-spacing: 0; margin-top: 1.8rem; }
 #R-body p, #R-body li { max-width: 72ch; overflow-wrap: anywhere; }
 #R-body p { margin: .8rem 0 1.2rem; }
 #R-body article > h2 { padding-top: .85rem; border-top: 1px solid var(--biolab-border); }
 #R-body a { text-decoration-thickness: 1px; text-underline-offset: .2em; }
 #R-body a:hover { text-decoration: underline; }
+#R-body article a:not(.btn) { text-decoration: underline; }
+#R-body article a:not(.btn):hover { text-decoration-thickness: 2px; }
 :where(a, button, input, summary, [tabindex]):focus-visible {
   outline: 3px solid var(--biolab-accent) !important;
   outline-offset: 4px;
@@ -93,6 +115,20 @@ code, pre, kbd, samp { font-family: var(--ift-font-mono); }
 #R-content-wrapper { font-size: .95rem; }
 #R-sidebar ul li > a { padding-block: .5rem; }
 #R-sidebar .active > a { border-radius: 0; box-shadow: none; }
+#R-sidebar li.active > a { border-inline-start: 3px solid var(--ift-algae); }
+#R-logo { gap: .65rem; text-align: left; }
+#R-logo.R-default .logo-image { display: block; flex-shrink: 0; }
+#R-logo.R-default .logo-title { font-size: 1.35rem; font-weight: 600; line-height: 1.15; white-space: normal; }
+/* Home-only identity: existing semantic H1 remains the HTML wordmark.
+   The decorative SVG resolves relative to this stylesheet under Pages subpaths. */
+#R-body:has(.ift-home) h1 { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2rem); font-size: clamp(2.35rem, 5vw, 4.4rem); margin-block: .5rem 1.7rem; }
+#R-body:has(.ift-home) h1::before {
+  content: "";
+  flex: 0 0 var(--ift-home-mark-width);
+  width: var(--ift-home-mark-width);
+  aspect-ratio: 184 / 176;
+  background: url("../images/shared/ift-biolab-mark.svg") center / contain no-repeat;
+}
 #R-topbar { font-size: .85rem; }
 #R-body .kicker, #R-body .record-label, #R-body .notebook-label {
   color: var(--biolab-accent);
@@ -111,12 +147,14 @@ code, pre, kbd, samp { font-family: var(--ift-font-mono); }
 #R-body blockquote { color: var(--biolab-muted); border-left: 2px solid var(--biolab-accent); font-style: normal; padding: .25rem 1.25rem; margin-inline: 0; }
 #R-body .box { border-radius: 0; box-shadow: none; }
 #R-body .box > .box-content { line-height: 1.65; }
-#R-body .box.callout { background: var(--biolab-surface); border: 0; border-left: 3px solid var(--biolab-accent); margin-block: 1.6rem; }
-#R-body .box.callout .box-label { background: transparent; color: var(--biolab-accent); font-size: .85rem; padding: 1rem 1.25rem 0; }
-#R-body .box.callout .box-content { background: transparent; color: var(--biolab-text); padding: .2rem 1.25rem .5rem; }
-#R-body .box.callout .box-label i { display: none; }
+/* Keep Relearn's semantic colors on borders/icons. Neutral labels avoid
+   low-contrast white text on the theme's warning-red header (4.26:1). */
+#R-body .box.callout { margin-block: 1.6rem; background: var(--ift-off-white); border-inline-start-width: 3px; }
+#R-body .box.callout .box-label,
+#R-body .box.callout .box-content { background: var(--ift-off-white); color: var(--ift-charcoal); }
+#R-body .box.callout .box-label i { color: var(--VARIABLE-BOX-color); }
 #R-body table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; border-radius: 0; font-size: .94rem; }
-#R-body th { text-align: left; font-weight: 650; }
+#R-body th { text-align: left; font-weight: 650; background: var(--ift-sage); color: var(--ift-charcoal); }
 #R-body td, #R-body th { border-color: var(--biolab-border); padding: .75rem 1rem; }
 #R-body tbody tr:nth-child(even) { background: var(--biolab-surface); }
 #R-body pre { border-radius: 0; max-width: 100%; overflow-x: auto; padding: 1.25rem; }
@@ -131,7 +169,7 @@ code, pre, kbd, samp { font-family: var(--ift-font-mono); }
 #R-body .children h2 { margin-bottom: .5rem; }
 @media (max-width: 47.999rem) {
   #R-body-inner { padding: 1.8rem 1.25rem 3rem; }
-  #R-body h1 { font-size: 2.3rem; }
+  #R-body h1 { font-size: clamp(1.8rem, 7.5vw, 2.15rem); }
   #R-body dl { grid-template-columns: 1fr; gap: .2rem; }
   #R-body dd { margin-bottom: .7rem; }
   #R-body article:has(.notebook-label) { padding-left: 1rem; }

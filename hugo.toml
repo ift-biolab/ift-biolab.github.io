@@ -15,6 +15,10 @@ enableRobotsTXT = true
   # Native Relearn styling extension: assets/css/custom.css (see ADMIN.md).
   editURL = 'https://github.com/ift-biolab/ift-biolab.github.io/edit/main/content/${FilePath}'
   sidebarHeaderMenus = [{ type = 'menu', identifier = 'home', disableTitle = true }, { type = 'divider' }]
+  # Native Relearn logo + separate HTML site title. See BRANDING.md.
+  [params.logo]
+    src = '/images/shared/ift-biolab-mark.svg'
+    layout = 'sidebar-row'
   [params.image]
     errorlevel = 'error'
   [params.link]
