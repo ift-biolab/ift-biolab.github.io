@@ -335,11 +335,6 @@ inventory:
     source: "User-supplied reported chemical inventory"
 ---
 
-> [!WARNING] Reported — physical confirmation pending
-> Inventory status indicates presence reported in the BioLab and does not replace container labels, current stock verification, SDS consultation or laboratory safety procedures.
-
-These names were supplied as a **reported** inventory. They are not listed as confirmed available materials. Quantities and item-specific documentation links have not been supplied.
-
 | Reported item | Inventory status |
 |---|---|
 | Hydrochloric acid | reported |

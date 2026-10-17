@@ -8,4 +8,4 @@ This is a manually maintained index. Project overviews link to student sites and
 
 ## Example only
 
-[Placeholder project](placeholder-project/index.md) — incomplete overview for demonstrating the structure. It links to the deployment demo, not a real student project.
+[Year project](placeholder-project/index.md) — incomplete overview for demonstrating the structure. It links to the deployment demo, not a real student project.

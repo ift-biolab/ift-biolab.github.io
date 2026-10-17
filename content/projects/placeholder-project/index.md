@@ -1,10 +1,10 @@
 ---
-title: "Placeholder project"
+title: "Year project"
 description: "Example only — incomplete project overview linking to the deployment demo."
 weight: 10
 ---
 
-> [!NOTE] Placeholder project
+> [!NOTE] Year project — example
 > This example demonstrates documentation structure only. It does not describe real students, a research programme or scientific results.
 
 Title

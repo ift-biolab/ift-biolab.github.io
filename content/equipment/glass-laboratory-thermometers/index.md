@@ -1,48 +1,72 @@
 ---
 title: "Glass Laboratory Thermometers"
-description: "Confirmed 2026 purchase · usage documentation in progress."
+description: "Confirmed purchase · specifications, documentation and unresolved checks."
 weight: 70
 inventory:
   - name: "Glass Laboratory Thermometers"
     category: "Equipment"
     status: "confirmed"
-    manufacturer: null
-    model: null
+    manufacturer: "METRIA (supplier brand; OEM not identified)"
+    model: "Glass thermometer, −10 to +50 °C, 300 mm"
     reference: "THER-050-010"
     quantity: 10
     unit: "unit"
     notes: "Confirmed 2026 purchase; present stock, access and readiness for use are not documented."
     source: "PVW2602335"
+manufacturer: "METRIA (supplier brand; OEM not identified)"
+model: "Glass thermometer, −10 to +50 °C, 300 mm"
+supplier: "Labbox"
+reference: "THER-050-010"
+status: "confirmed"
 ---
 
-## Purpose
+## What is it?
 
-Temperature measurement.
+Glass, coloured-liquid thermometers; the supplier describes a mercury-free, partial-immersion design.
 
-## Availability
+**Reference:** THER-050-010 · **Model:** Glass thermometer, −10 to +50 °C, 300 mm · **Supplier:** Labbox.
 
-**Inventory status: confirmed.** Confirmed 2026 purchase quantity: **10**. Source: **PVW2602335**.
+**Manufacturer / brand:** METRIA (supplier brand; OEM not identified).
 
-This record is not a live availability or booking statement. Current access and readiness for use must be checked with the BioLab supervisor.
+## Main capabilities
+
+Temperature indication within the documented range.
 
 ## Main specifications
 
-- Reference: THER-050-010.
-- Range: -10 to +50 °C.
-- Accuracy: 0.5 °C.
-- Length: 300 mm.
+Technical datasheet PDS-561, revised **7 April 2026**, exact THER-050-010 row.
+
+| Parameter | Specification |
+|---|---|
+| Range | −10 to +50 °C |
+| Length / diameter | 300 mm / 6 mm |
+| Partial-immersion marking | 76 mm |
+| Supplier “resolution” field | ±0.5 °C; accuracy terminology unresolved |
+| Purchased quantity | 10 thermometers (local inventory; pack reference THER-050-010) |
+{tabindex="0" aria-label="Glass Laboratory Thermometers specifications"}
+
+**Documentation discrepancies / limits:** The purchase record calls 0.5 °C “accuracy”; the supplier datasheet calls ±0.5 °C “resolution” (and German “readability”). These terms are not equivalent. No calibrated accuracy or calibration certificate is established here.
+
+## BioLab use
+
+Temperature observation. No BioLab measurement method or sample compatibility is established.
 
 ## Before first use
 
-Usage documentation in progress. Ask the BioLab supervisor before first use.
+> BioLab operating protocol in preparation. Read the manufacturer manual and ask the BioLab supervisor before first use.
 
 ## Related protocols
 
-No related usage protocol has been supplied. [Browse protocol records](../../protocols/_index.md); the example protocol is not operating guidance for this equipment.
+Documentation in preparation.
 
 ## Documentation
 
-Inventory source: **PVW2602335**. No usage manual or equipment-specific documentation link has been supplied.
+Official sources reviewed **17 October 2026**:
+
+- [Supplier page](https://labbox.fr/produit/thermometre-en-verre/), THER-050-010.
+- [Technical datasheet PDS-561 (PDF)](https://labbox.fr/wp-content/uploads/FT/PDS-561.pdf), 7 April 2026; multilingual.
+
+A user manual, separate OEM datasheet and calibration certificate were not located. Ask the supervisor for the applicable instructions before use.
 
 ## Responsible person
 
