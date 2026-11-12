@@ -15,7 +15,7 @@ weight: 80
 | Paul Simonet | 2026–2027 | [Documentation](https://ift-biolab.github.io/2027-paul-simonet/) | [Year project](https://ift-biolab.github.io/2027-paul-simonet/project/overview/) |
 | Carolyn Haase | 2026–2027 | [Documentation](https://ift-biolab.github.io/2027-carolyn-haase/) | [Year project](https://ift-biolab.github.io/2027-carolyn-haase/project/overview/) |
 | Paul Lamour | 2026–2027 | [Documentation](https://ift-biolab.github.io/2027-paul-lamour/) | [Year project](https://ift-biolab.github.io/2027-paul-lamour/project/overview/) |
-| Paul Benetreau | 2026–2027 | [Documentation](https://ift-biolab.github.io/2027-paul-benetreau/) | [Year project](https://ift-biolab.github.io/2027-paul-benetreau/project/overview/) |
+| Pierre Bénétreau | 2026–2027 | [Documentation](https://ift-biolab.github.io/2027-pierre-benetreau/) | [Year project](https://ift-biolab.github.io/2027-pierre-benetreau/project/overview/) |
 | Hugo Antaki | 2026–2027 | [Documentation](https://ift-biolab.github.io/2027-hugo-antaki/) | [Year project](https://ift-biolab.github.io/2027-hugo-antaki/project/overview/) |
 | Zoé Desfrestier | 2026–2027 | [Documentation](https://ift-biolab.github.io/2027-zoe-desfrestier/) | [Year project](https://ift-biolab.github.io/2027-zoe-desfrestier/project/overview/) |
 {tabindex="0" aria-label="Students 2026–2027 documentation and year projects"}
